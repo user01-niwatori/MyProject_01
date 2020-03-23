@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace Assets.Scripts.Data
 {
@@ -6,6 +6,7 @@ namespace Assets.Scripts.Data
     /// ユーザーデータクラス
     /// クラスを丸ごと保存するために、データ変数はpublicにする。
     /// </summary>
+    [System.Serializable]
     public class UserData
     {
         #region データ変数
@@ -24,6 +25,18 @@ namespace Assets.Scripts.Data
         /// 現在クリア済みのステージレベル
         /// </summary>
         public int StageLevel = 0;
+
+        /// <summary>
+        /// 現在選択中のキャラクター
+        /// </summary>
+        public CharacterData SelectCharacter = null;
+
+        /// <summary>
+        /// 所持しているキャラクター達
+        /// </summary>
+        public List<CharacterData> MyCharacters = null;
+
+
 
         #endregion
 

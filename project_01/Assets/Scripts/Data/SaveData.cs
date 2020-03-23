@@ -170,6 +170,7 @@ namespace Assets.Scripts.Data
         public static void Clear()
         {
             Savedatabase.Clear();
+            Savedatabase.Save();
         }
 
         /// <summary>
@@ -250,13 +251,17 @@ namespace Assets.Scripts.Data
 
             }
 
+            //　↓の文をコメントアウトpublic static void Clear()にSavedata.Save()を追加
+            //  する事でUnityエディタ終了後も内容が維持できる
+
             /// <summary>
             /// クラスが破棄される時点でファイルに書き込みます。
             /// </summary>
-            ~SaveDataBase()
-            {
-                Save();
-            }
+            //~SaveDataBase()
+            //{
+            //    Debug.LogError("~SaveDataBase");
+            //    Save();
+            //}
 
             #endregion
 
@@ -403,8 +408,11 @@ namespace Assets.Scripts.Data
                         if (saveDictionary != null)
                         {
                             var sDict = JsonUtility.FromJson<Serialization<string, string>>(sr.ReadToEnd());
-                            sDict.OnAfterDeserialize();
-                            saveDictionary = sDict.ToDictionary();
+                            if(sDict != null)
+                            {
+                                sDict.OnAfterDeserialize();
+                                saveDictionary = sDict.ToDictionary();
+                            }
                         }
                     }
                 }
