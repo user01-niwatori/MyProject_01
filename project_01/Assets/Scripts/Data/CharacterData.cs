@@ -1,5 +1,4 @@
 ﻿
-
 namespace Assets.Scripts.Data
 {
     /// <summary>
@@ -9,6 +8,10 @@ namespace Assets.Scripts.Data
     [System.Serializable]
     public class CharacterData
     {
+        /// <summary>
+        /// ID
+        /// </summary>
+        public int ID = 0;
 
         /// <summary>
         /// キャラの名前
@@ -23,7 +26,7 @@ namespace Assets.Scripts.Data
         /// <summary>
         /// キャラのライフ
         /// </summary>
-        public float Life = 0;
+        public float Hp = 0;
 
         /// <summary>
         /// キャラの動くスピード
