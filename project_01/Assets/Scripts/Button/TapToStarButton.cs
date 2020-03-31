@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Assets.Scripts.Obstacle;
+using Assets.Scripts.Manager;
 
 namespace Assets.Scripts.Button
 {
@@ -16,6 +16,8 @@ namespace Assets.Scripts.Button
         {
             // UIを非表示にする
             m_Canvas_UI.SetActive(false);
+            // バトルを始める
+            BattleManager.Instance.StartBattle();
         }
     }
 }
