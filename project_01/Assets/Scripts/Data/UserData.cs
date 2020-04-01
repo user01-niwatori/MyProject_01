@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.Scripts.Data
 {
@@ -12,11 +13,6 @@ namespace Assets.Scripts.Data
         #region データ変数
 
         /// <summary>
-        /// ログイン状態か？
-        /// </summary>
-        public bool IsLogin = false;
-
-        /// <summary>
         /// 所持しているコインの数
         /// </summary>
         public int Money = 100;
@@ -25,6 +21,11 @@ namespace Assets.Scripts.Data
         /// 現在クリア済みのステージレベル
         /// </summary>
         public int StageLevel = 0;
+
+        /// <summary>
+        /// プレイヤーオブジェクト
+        /// </summary>
+        public GameObject PlayerObj = null;
 
         /// <summary>
         /// 現在選択中のキャラクター

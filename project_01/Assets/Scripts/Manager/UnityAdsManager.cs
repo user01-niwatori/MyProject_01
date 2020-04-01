@@ -29,9 +29,9 @@ namespace Assets.Scripts.Manager
         /// AdsID
         /// </summary>
 #if UNITY_IOS
-    public const string ADS_MEDIA_ID = "3337771";
+        public const string ADS_IOS_ID = "3337771";
 #elif UNITY_ANDROID
-        public const string ADS_MEDIA_ID = "3337772";
+        public const string ADS_ANDROID_ID = "3337772";
 #endif
 
         /// <summary>
@@ -42,9 +42,9 @@ namespace Assets.Scripts.Manager
             Debug.Log("UnityAds初期化");
 
 #if UNITY_IOS
-        Advertisement.Initialize (ADS_MEDIA_ID);
+        Advertisement.Initialize (ADS_IOS_ID);
 #elif UNITY_ANDROID
-            Advertisement.Initialize(ADS_MEDIA_ID);
+        Advertisement.Initialize(ADS_ANDROID_ID);
 #endif
         }
 

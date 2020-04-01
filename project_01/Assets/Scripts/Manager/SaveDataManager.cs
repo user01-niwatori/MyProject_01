@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Common;
+﻿using UnityEngine;
+using Assets.Scripts.Common;
 using Assets.Scripts.Data;
 
 namespace Assets.Scripts.Manager

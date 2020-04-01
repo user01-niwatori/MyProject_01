@@ -14,9 +14,10 @@ namespace Assets.Scripts.Initialize
             UnityAdsManager.Instance.Initialized();
             SaveDataManager.Instance.Initialized();
 
-            Debug.Log("ログイン状態:" + GameData.UserData.IsLogin);
-            Debug.Log("コインの数:" + GameData.UserData.Money);
-            Debug.Log("ステージレベル:" + GameData.UserData.StageLevel);
+            string charaPrefabIDStr = "Prefabs/Characters/Character_" + string.Format("{0:00}", GameData.UserData.SelectCharacter.ID);
+
+            GameData.UserData.PlayerObj = Instantiate((GameObject)Resources.Load(charaPrefabIDStr));
+            Debug.Log(GameData.UserData.PlayerObj.name);
         }
     }
 }

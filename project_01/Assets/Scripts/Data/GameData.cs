@@ -35,7 +35,7 @@ namespace Assets.Scripts.Data
         /// <summary>
         /// ユーザーデータクラス
         /// </summary>
-        private static UserData m_userData = new UserData();
+        private static UserData m_userData;
 
         #endregion
 
