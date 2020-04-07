@@ -1397,6 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5420036c995da9c478297f4a805d448e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_excelData: {fileID: 11400000, guid: 46c0211f3a9983a48b4ff0df48ae006e, type: 2}
 --- !u!1 &828948813
 GameObject:
   m_ObjectHideFlags: 0

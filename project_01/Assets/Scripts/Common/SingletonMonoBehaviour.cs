@@ -48,7 +48,7 @@ namespace Assets.Scripts.Common
             if (_instance == null)
             {
                 _instance = this as T;
-                Debug.Log(_instance + "が生成されました。");
+                //Debug.Log(_instance + "が生成されました。");
                 return true;
             }
             else if (_instance == this)

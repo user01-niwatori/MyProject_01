@@ -39,8 +39,6 @@ namespace Assets.Scripts.Manager
         /// </summary>
         public void Initialized()
         {
-            Debug.Log("UnityAds初期化");
-
 #if UNITY_IOS
         Advertisement.Initialize (ADS_IOS_ID);
 #elif UNITY_ANDROID

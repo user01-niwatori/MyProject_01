@@ -14,8 +14,7 @@ namespace Assets.Scripts.Button
         /// </summary>
         public void OnClick_DebugCoinUp()
         {
-            GameData.UserData.Money += 1000;
-            SaveDataManager.Instance.SaveUserData();
+            GameData.UserData.AddMoney(1000);
             DisplayManager.Instance.Log("コインを増やしました:" + GameData.UserData.Money);
         }
     }

@@ -14,12 +14,7 @@ namespace Assets.Scripts.Button
         /// </summary>
         public void OnClick_DebugLevelDown()
         {
-            if (GameData.UserData.StageLevel > 0)
-            {
-                GameData.UserData.StageLevel -= 1;
-            }
-
-            SaveDataManager.Instance.SaveUserData();
+            GameData.UserData.AddLevel(-1);
             DisplayManager.Instance.Log("レベルを下げました:" + GameData.UserData.StageLevel);
         }
     }

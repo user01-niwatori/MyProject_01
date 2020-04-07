@@ -10,12 +10,7 @@ namespace Assets.Scripts.Initialize
     {
         void Start()
         {
-            //// プレイヤーが生成されていなければ...
-            //if(!GameData.UserData.PlayerObj)
-            //{
-            //    // Character_00をプレイヤーとして生成する
-            //    //GameData.UserData.PlayerObj = (GameObject)Resources.Load("Prefabs/Characters/Character_00");
-            //}
+
         }
     }
 }

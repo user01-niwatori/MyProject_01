@@ -14,8 +14,8 @@ namespace Assets.Scripts.Button
         /// </summary>
         public void OnClick_DebugLevelUp()
         {
-            GameData.UserData.StageLevel += 1;
-            SaveDataManager.Instance.SaveUserData();
+
+            GameData.UserData.AddLevel(1);
             DisplayManager.Instance.Log("レベルを上げました:" + GameData.UserData.StageLevel);
         }
     }

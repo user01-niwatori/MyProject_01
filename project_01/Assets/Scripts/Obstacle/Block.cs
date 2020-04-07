@@ -52,6 +52,9 @@ namespace Assets.Scripts.Obstacle
         /// </summary>
         private bool m_isTurn = false;
 
+        /// <summary>
+        /// Start
+        /// </summary>
         private void Start()
         {
             m_defalutPos = transform.position;
